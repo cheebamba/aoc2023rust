@@ -39,7 +39,7 @@ fn day4p2() {
         multipliers.remove(0);
         multipliers.push(1);
     }
-    println!("Day 4 p2: {:?}", _sum);
+    println!("Day 4p2: {:?}", _sum);
 }
 
 fn day4() {
