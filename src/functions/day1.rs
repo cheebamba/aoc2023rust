@@ -40,8 +40,8 @@ pub fn day1p2() {
         num = return_first_digit_string(row);
         sum += num;
         println!("{:?}", num);
-        println!("Day 1p2: {sum}");
     }
+    println!("Day 1p2: {sum}");
 }
 
 fn return_first_digit_string(string: &str) -> i32 {
