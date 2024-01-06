@@ -18,8 +18,18 @@ fn day5() {
 }
 
 fn return_map_vec(string: &str) {
-    let mapstring = string.split("map:\n").collect::<Vec<&str>>()[1];
-    dbg!(mapstring);
+    let map_string = string.split("map:\n").collect::<Vec<&str>>()[1];
+    let map_rows = map_string.split("\n").collect::<Vec<&str>>();
+    let mut map_vec: Vec<(u32, u32, u32)> = Vec::new();
+
+    for row in map_rows.iter() {
+        let row_split = row.split(" ").collect::<Vec<&str>>();
+        map_vec.push((
+            row_split[0].parse::<u32>().unwrap(),
+            row_split[1].parse::<u32>().unwrap(),
+            row_split[2].parse::<u32>().unwrap(),
+        ));
+    }
 }
 
 fn return_seeds_vec(string: &str) {
