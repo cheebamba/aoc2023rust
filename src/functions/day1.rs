@@ -68,41 +68,6 @@ fn return_first_digit_string(string: &str) -> u32 {
         lastnumber = thisnumber;
     }
     return firstnumber * 10 + lastnumber;
-
-    // let re_string = Regex::new(r"[0-9]|one|two|three|four|five|six|seven|eight|nine");
-    // let number_array = HashMap::from([
-    //     ("one", 1),
-    //     ("two", 2),
-    //     ("three", 3),
-    //     ("four", 4),
-    //     ("five", 5),
-    //     ("six", 6),
-    //     ("seven", 7),
-    //     ("eight", 8),
-    //     ("nine", 9),
-    // ]);
-    // let mut first_number = 0;
-    // let mut last_number = 0;
-    // for number in re_string.expect("").captures_iter(string) {
-    //     let number_string = number.get(0).unwrap().as_str();
-    //     let is_digit: bool = number_string.parse::<i32>().is_ok();
-    //     if first_number == 0 {
-    //         if is_digit {
-    //             first_number = number_string.parse::<i32>().unwrap();
-    //         } else {
-    //             first_number = *number_array.get(number_string).unwrap();
-    //         }
-    //     }
-    //     if is_digit {
-    //         last_number = number_string.parse::<i32>().unwrap();
-    //     } else {
-    //         last_number = *number_array.get(number_string).unwrap();
-    //     }
-    // }
-    // let this_number = format!("{first_number}{last_number}")
-    //     .parse::<i32>()
-    //     .unwrap();
-    // return this_number;
 }
 
 fn return_first_digit(string: &str) -> i32 {
